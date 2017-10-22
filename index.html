@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Agile Basics</title>
+
+		<meta name="description" content="The course is meant to be taught in a one-hour workshop.">
+		<meta name="author" content="Shannon Bertucci">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/gdicool.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			  <!-- Opening slide -->
+        <section>
+          <h3>Agile Basics</h3>
+					<img class="intro-logo" src="https://cdn.worldvectorlogo.com/logos/agile-software-34934.svg"/>
+					<h5>Shannon Bertucci</h5>
+					<h5>Ruby, Javascript, Engineering Mentor</h5>
+					<h5>shannon.io</h5>
+        </section>
+
+        <section>
+          <h3>Welcome!</h3>
+          <div class = "left-align">
+          <p class = "blue">Tell us about yourself.</p>
+          <ul>
+            <li>Who are you?</li>
+            <li>Where are you in the program?</li>
+            <li>What track are you in ?</li>
+            <li>What is Agile?</li>
+						<li>Do you want to participate in the project?</li>
+          </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>What we will cover today</h3>
+          <ul>
+            <li class ="fragment">Agile and Scrum</li>
+            <li class ="fragment">Scrum Events</li>
+            <li class ="fragment">Writing User Stories</li>
+            <li class ="fragment">Pointing</li>
+            <li class ="fragment">Agile Culture</li>
+          </ul>
+        </section>
+
+        <!-- Version control-->
+        <section>
+          <section>
+            <h3>What is Agile?</h3>
+            <p class ="fragment">A set of values and principles</p>
+						<img class ="fragment" src="images/whatisagile.png" />
+          </section>
+          <section>
+            <h3>Agile Principles</h3>
+            <ol>
+							<li>Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</li>
+							<li>Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.</li>
+							<li>Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.</li>
+							<li>Business people and developers must work together daily throughout the project.</li>
+							<li>Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.</li>
+							<li>The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.</li>
+						</ol>
+          </section>
+          <section>
+            <h3>Agile Principles, Cont...</h3>
+            <ol>
+							<li>Working software is the primary measure of progress.</li>
+							<li>Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.</li>
+							<li>Continuous attention to technical excellence and good design enhances agility.</li>
+							<li>Simplicity--the art of maximizing the amount of work not done--is essential.</li>
+							<li>The best architectures, requirements, and designs emerge from self-organizing teams.</li>
+							<li>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.</li>
+						</ol>
+          </section>
+        </section>
+
+				<section>
+					<section>
+						<h3>Scrum</h3>
+						<img src="images/scrum.jpg" />
+					</section>
+
+					<section>
+						<h3>Scrum</h3>
+						<img src="images/scrum-overview-mark-hoogveld.jpg" />
+					</section>
+
+					<section>
+						<h3>Scrum</h3>
+						<h4>Consider flying from point A to point B</h4>
+						<ul>
+							<li>Our <strong>customer</strong> is our pilot</li>
+							<ul>
+								<li>Enters destination in GPS</li>
+								<li>Can do mid-course corrections</li>
+							</ul>
+							<li><strong>Product Owner</strong> is the GPS System</li>
+							<ul>
+								<li>Gives direction</li>
+								<li>Estimates arrival time</li>
+							</ul>
+						</ul>
+						<ul>
+					</section>
+					<section>
+						<h3>Scrum</h3>
+						<ul>
+							<li><strong>Team</strong> is the airplane</li>
+							<ul>
+								<li>Supply the power</li>
+								<li>Follows directions from the pilot</li>
+								<li>If broken the directions no longer matter!</li>
+							</ul>
+							<li><strong>Scrum Master</strong> is the autopilot</li>
+							<ul>
+								<li>Helps the team control speed as appropriate</li>
+								<li>Helps the team follow directions</li>
+								<li>Interacts with GPS when changes need to be made</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h3>Scrum Events</h3>
+					<ul>
+						<li>Two Week Sprints</li>
+						<li>Daily Standup</li>
+						<li>Backlog Grooming</li>
+						<li>Sprint Planning</li>
+						<li>Team Retro</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h3>User Story Writing</h3>
+						<p>“As a ___, I want ____, so that ___”</p>
+					</section>
+					<section>
+						<h3>User Story Writing</h3>
+						<p>Acceptance Criteria</p>
+						<ul>
+							<li>Verify a user is not charged for same-day cancellation</li>
+							<li>Verify a cancellation email is sent</li>
+							<li>Verify the hotel is notified of the cancellation</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Pointing</h3>
+						<li>0 - Trivial Complexity</li>
+						<li>1 - Low Complexity</li>
+						<li>2 - Medium Complexity</li>
+						<li>3 - High Complexity</li>
+						<li>5 - One Unknown</li>
+						<li>8 - Many Unknowns</li>
+					</section>
+				</section>
+
+        <section>
+          <h2>Questions?</h2>
+          <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+            <div class ="clear"></div></div>
+        </section>
+			</div>
+		</div>
+
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
